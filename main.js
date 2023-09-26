@@ -2,10 +2,10 @@
 var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 // Add a tile layer to the map
-Lvar OpenStreetMap_Mapnik = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	maxZoom: 19,
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(mymap);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
 
 // Add a marker, circle, and polygon to the map
 var marker = L.marker([51.5, -0.09]).addTo(mymap);
